@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #fff;
-  color: #121212;
+  background: #000;   /* black page background */
+  color: #fff;        /* default text white */
 }
 
 .top-bar {
@@ -159,10 +159,9 @@ body {
 
 .features-row {
   display: flex;
-  justify-content: space-around;
-  background: #fff;
-  padding: 28px 0 24px 0;
-  border-bottom: 1px solid #efefef;
+  justify-content: space-evenly;
+  background: transparent;
+  padding: 28px 10px 24px 10px;
   font-size: 1rem;
 }
 .feature-item {
@@ -259,7 +258,7 @@ body {
   color: #27251f;
   margin-top: 16px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #3e2c13;
+  border-bottom: 2px solid #fff;
   display: inline-block;
   padding-bottom: 2px;
 }
@@ -612,19 +611,21 @@ body {
 
 #logo-bar {
   width: 100%;
-  height: 220px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   margin: 10px auto;
   overflow: hidden; /* ensures image never spills out */
+  background: transparent;
 }
 
 .pkholding-logo {
   max-height: 100%;   /* fits inside the container */
   max-width: 100%;    /* responsive horizontally */
   object-fit: contain; /* keeps aspect ratio */
+  background:transparent;
 }
 
 
@@ -772,7 +773,7 @@ body {
       margin-bottom: 20px;
       font-weight: 600;
       text-align: center;
-      color: #2c3e50;
+      color: #fff;
     }
 
 
@@ -810,7 +811,7 @@ body {
 
 /* === ABOUT SECTION === */
 .about-section {
-  background: #fff;
+  background: transparent;
   color: #333;
   padding: 70px 8vw;
   overflow: hidden;
@@ -832,7 +833,7 @@ body {
 .about-text h2 {
   font-size: 2.2rem;
   margin-bottom: 18px;
-  color: #222;
+  color: #fff;  
   position: relative;
 }
 .about-text h2 span {
@@ -842,7 +843,7 @@ body {
 .about-text p {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #555;
+  color: #fff;
   margin-bottom: 18px;
 }
 
@@ -899,7 +900,7 @@ body {
 
 /* === FEATURES SECTION === */
 .features-section {
-  background: #f9f9f9;
+  background: transparent;
   padding: 70px 8vw;
   text-align: center;
 }
@@ -980,7 +981,7 @@ body {
 
 /* === SHIPPING & RETURNS === */
 .shipping-section {
-  background: #f9f9f9;
+  background: transparent;
   padding: 80px 8vw;
   color: #333;
   font-family: 'Segoe UI', sans-serif;
@@ -1011,7 +1012,7 @@ body {
 
 .shipping-info p {
   font-size: 1.05rem;
-  color: #555;
+  color: #fff;
   line-height: 1.7;
   margin-bottom: 25px;
 }
@@ -1065,7 +1066,7 @@ body {
   text-align: left;
   font-size: 1rem;
   font-weight: 600;
-  color: #222;
+  color: #fff;
   padding: 14px 0;
   cursor: pointer;
   position: relative;
@@ -1096,7 +1097,7 @@ body {
 }
 .faq-answer p {
   font-size: 0.95rem;
-  color: #555;
+  color: #fff;
   padding-bottom: 10px;
 }
 
@@ -1152,7 +1153,7 @@ body {
 ======================= */
 .contact-section {
   padding: 80px 8vw;
-  background: linear-gradient(135deg, #fff 60%, #f8f8f8);
+  background: transparent;
   text-align: center;
 }
 
@@ -1164,7 +1165,7 @@ body {
 }
 
 .contact-section p {
-  color: #555;
+  color:#fff;
   font-size: 1.1rem;
   margin-bottom: 50px;
 }
@@ -1285,7 +1286,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 25px;
-  color: #222;
+  color: #fff;
 }
 
 .map-container {
@@ -1566,7 +1567,7 @@ body {
 }
 
 .highlight-section {
-  background-color: #f8e199;
+  background: url('./new elements/highlight features gradient.png') ;
   border-radius: 30px;
   padding: 40px 20px;
   max-width: 1850px;
@@ -1586,7 +1587,7 @@ body {
 }
 
 .bold-black {
-  color: #1a1a1a;
+  color: #9b9b9b;
   font-weight: 700;
 }
 
@@ -1596,7 +1597,7 @@ body {
 }
 
 .highlight-section p {
-  color: #333;
+  color: #9b9b9b;
   font-size: 1rem;
   line-height: 1.6;
   max-width: 700px;
@@ -1635,7 +1636,7 @@ body {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: transparent;
   backdrop-filter: blur(12px);
   display: flex;
   justify-content: flex-end;
@@ -1654,7 +1655,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #2b2b2b;
+  color: #fff8f8;
   font-weight: 500;
   font-size: 17px;
   transition: all 0.3s ease;
@@ -1729,7 +1730,7 @@ body {
     right: -100%;
     height: 100vh;
     width: 240px;
-    background: rgba(255, 255, 255, 0.95);
+    background: black;
     backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: center;
@@ -1756,8 +1757,9 @@ body {
 }
 
 
-
-
+.menu-icon span {
+  background-color: white;
+}
 
 
 
